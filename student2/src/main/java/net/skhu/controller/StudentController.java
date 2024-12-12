@@ -23,6 +23,7 @@ public class StudentController {
         return studentRepository.findAll();
     }
 
+
     @GetMapping("student/list")
     public String list(Model model) {
         var students = studentRepository.findAll();
